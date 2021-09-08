@@ -8,18 +8,17 @@ img {
   filter: brightness(20%);
 }
 body {
-  background-color: rgb(251, 221, 246);
+  background-color: #ff6aeb;
   font-size: 18px;
   font-family: "Manrope", Arial, Helvetica, sans-serif;
-  margin: 0px;
+  margin: 10px;
 }
 
 /* ========== CONTAINER ========== */
 
 .container {
   display: grid;
-  gap: 30px;
-  margin: 10px;
+  gap: 10px;
 }
 
 /* ========== HEADER ========== */
@@ -35,7 +34,7 @@ body {
 .hero {
   grid-area: hero;
   min-height: 300px;
-  background-image: url(img/Luxury-hijab-2.jpeg);
+  background-image: url(Luxury-hijab-2.jpeg);
   background-size: cover;
   background-position: top;
   padding: 50px;
@@ -65,14 +64,14 @@ body {
 }
 .feature-1 {
   grid-area: feature-1;
-  background-image: url(img/cardigan-2.jpeg);
+  background-image: url(cardigan-2.jpeg);
   background-size: cover;
   background-position: center;
   border-top-right-radius: 10px;
 }
 .feature-2 {
   grid-area: feature-2;
-  background-image: url(img/Luxury-hijab.jpeg);
+  background-image: url(Luxury-hijab.jpeg);
   background-size: cover;
   background-position: center;
   border-bottom-right-radius: 10px;
@@ -119,16 +118,16 @@ body {
   /* border: 2px solid black; */
   display: block;
   /* background: linear-gradient(to right,#ff25edec, #f67ce6); */
-  color: black;
+  color: white;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-  background: #ffaff4;
+  background: #c52db1;
   border-radius: 5px;
   text-decoration: none;
   padding: 20px;
   transition: all 0.3s;
 }
 .menu a:hover {
-  background-color: #ce6bc0;
+  background-color: rgb(114, 23, 114);
 }
 /* ========== Hamburger menu ==========  */
 .menu-toggle {
@@ -185,22 +184,22 @@ body {
   gap: 10px;
 }
 .service {
-  background-color: #fda2f1;
-  color: black;
+  background-color: #c52db1;
+  color: white;
   padding: 20px;
   text-align: center;
   cursor: pointer;
   /* border: 2px solid black; */
   border-radius: 10px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   background-repeat: no-repeat;
   background-size: 0 100%;
   transition: background-size 0.8s 0s;
 }
 .service:hover {
-  background-image: linear-gradient(to right, #fdc9f6 5%, #fda2f1 90%);
+  background-image: linear-gradient(to right, #fdc9f6 5%, #c52db1 90%);
   background-size: 100% 100%;
-  color: #7c006b;
+  color: black;
 }
 .service .icon {
   font-size: 3em;
@@ -215,13 +214,9 @@ body {
   font-size: 0.8em;
 }
 /* ========== WEB MAKER ========== */
-footer {
+.web-maker {
   font-weight: 200;
   font-size: 0.6em;
-  background-color: white;
-  padding: 5px;
-  margin: 0px;
-  text-align: center;
 }
 /* ========== responsive ========== */
 
@@ -232,12 +227,6 @@ footer {
   }
   .menu .brand {
     display: none;
-  }
-  .menu ul {
-    gap: 0;
-  }
-  .menu a {
-    border-radius: 0;
   }
   .hero > * {
     display: block;

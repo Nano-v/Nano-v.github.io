@@ -8,10 +8,10 @@ img {
   width: 100%;
 }
 body {
-  /* background-color: rgb(251, 221, 246); */
-  background-image: url(img/8-times-logo.jpg);
-  width: 100%;
-  height: 100%;
+  background-color: rgb(251, 223, 242);
+  /* background-image: url(img/8-times-logo.jpg); */
+  /* width: 100%;
+  height: 100%; */
   font-family: "Manrope", Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin: 0px;
@@ -28,8 +28,8 @@ body {
 /* ========== HEADER (GAMBAR) ========== */
 
 .header {
-  border: 2px solid black;
-  border-radius: 12px;
+  border: 5px solid rgb(255, 176, 231);
+  border-radius: 15px;
   display: grid;
   grid-template-areas:
     "hero hero feature-1"
@@ -188,6 +188,7 @@ body {
   gap: 10px;
 }
 .service {
+  border: 5px solid rgb(255, 176, 231);
   background-color: rgba(255, 185, 228, 0.924);
   color: black;
   padding: 20px;
@@ -195,13 +196,13 @@ body {
   cursor: pointer;
   /* border: 2px solid black; */
   border-radius: 10px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-size: 0 100%;
   transition: background-size 0.8s 0s;
 }
 .service:hover {
-  background-image: linear-gradient(to right, rgb(255, 159, 233) 20%, rgb(255, 234, 250) 10%, rgba(255, 185, 228, 0.116) 70%);
+  background-image: linear-gradient(to right, rgb(255, 234, 250) 10%, rgba(255, 185, 228, 0.116) 70%);
   background-size: 100% 100%;
   color: #7c006b;
 }
@@ -265,7 +266,7 @@ footer {
     justify-items: end;
   }
   .menu a {
-    background-color: rgb(255, 208, 249);
+    background-color: rgb(255, 172, 237);
     padding: 40px;
     border-radius: 20px;
   }
@@ -283,7 +284,8 @@ footer {
     justify-content: space-evenly;
     flex-direction: column;
     color: white;
-    background-color: rgba(255, 176, 225, 0.897);
+    /* background-color: rgba(255, 176, 225, 0.897); */
+    background-image: url(img/8-times-logo.jpg);
     z-index: 1;
     transform: translateY(-100%);
     transition: all 1s;
